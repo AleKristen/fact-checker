@@ -6,3 +6,17 @@
   border-radius: 20px;
   background: #0E98BF;
 }
+
+.btn-next{
+  width: 80px;
+  height: 80px;
+  bottom: 45px;
+  position: absolute;
+  background-color: #F1F1F1;
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.25);
+}
+
+i.next{
+  color: #562281;
+  font-size: 45px;
+}
