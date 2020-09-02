@@ -1,1 +1,21 @@
-<h1>level3</h1>
+<div class="container-fluid level3-ctn">
+    <div class="d-flex justify-content-center pt-5">
+      <div class="flex-col">
+  
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <div class="cS"> <h6>{{question.title}}</h6> </div>
+          </div>
+        </div>
+            <div class="flex-col" *ngFor="let option of question.options">
+              <button class="btn optionS" style="width: 16rem;" type="submit">{{ option.a }}</button>
+              <button class="btn optionS" style="width: 16rem;" type="submit">{{ option.b }}</button>
+            </div>
+  
+      </div>
+    </div>
+    <div class="container d-flex flex-row justify-content-center align-items-center">
+        <button (click)="nextQuestion()"class="btn rounded-circle btn-next"><i class="next fas fa-chevron-right"></i></button>
+    </div>
+  
+  </div>

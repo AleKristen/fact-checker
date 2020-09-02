@@ -1,1 +1,25 @@
-<h1>level4</h1>
+<div class="container-fluid level3-ctn">
+    <div class="text-center ctn-virus">
+        <h4>¡Que el virus no te ataque!</h4>
+        <div class="d-flex justify-content-center" style="margin-top: 1em;">
+            <img class="animate__animated animate__pulse animate__infinite" src="../../../assets/image/covid.svg" >
+            <img class="animate__animated animate__pulse animate__infinite" src="../../../assets/image/covid.svg" style="padding-left: 20px; padding-right: 20px;">
+            <img class="animate__animated animate__pulse animate__infinite" src="../../../assets/image/covid.svg">
+        </div>
+    </div>
+    
+    <div class="container text-center text-ctn">
+        <div class="container-fluid d-flex justify-content-center ocho">
+            <div class="cS"> <h6>{{question.title}}</h6></div>
+            <div *ngFor="let option of question.options">
+                <button class="btn optionS" style="width: 16rem;" type="submit">{{ option.a }}</button>
+                <button class="btn optionS" style="width: 16rem;" type="submit">{{ option.b }}</button>
+                <button class="btn optionS" style="width: 16rem;" type="submit">{{ option.c }}</button>
+              </div>
+        </div>
+    </div>   
+
+    <div class="container d-flex flex-row justify-content-center align-items-center">
+        <button (click)="nextQuestion()" class="btn rounded-circle btn-next"><i class="next fas fa-chevron-right"></i></button>
+    </div>
+</div>

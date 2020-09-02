@@ -1,3 +1,53 @@
-* {
+.level3-ctn {
   background-color: #23BDEA;
+  height: 100vh;
+}
+
+.ctn-virus{
+  padding-top: 2.5rem;
+}
+
+h4{
+  font-weight: 900;
+  color: #F1F1F1;
+}
+
+.optionS {
+background: #02708F;
+box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.25);
+border-radius: 20px;
+color: #F1F1F1;
+margin-top: 1.5rem;
+}
+
+.optionS:focus{
+  background-color: #562281;
+
+}
+
+.cS {
+color: #3F3F3F;
+width: 18rem;
+background-color: #F1F1F1;
+padding: 1em;
+border-radius: 15px;
+margin-top: 2rem;
+}
+
+.btn-next{
+  width: 80px; 
+  height: 80px; 
+  bottom: 45px; 
+  position: absolute; 
+  background-color: #F1F1F1;
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.25);
+}
+
+i.next{
+  color: #562281;
+  font-size: 45px;
+}
+
+.ocho{
+  flex-direction: column;
 }

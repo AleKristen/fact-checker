@@ -88,7 +88,22 @@ i.retry{
 
 /* Media tablet----------------------------------------- */
 
-@media (min-width: 420px) {
+@media (min-width: 570px) {
+    .covid2{
+        margin-left: 80.5%; 
+        margin-top: 8.75%; 
+        width: 18%;
+    }
+    .covid3{
+        margin-left: -4%; 
+        margin-top: 36%; 
+        width: 19%;
+    }
+    .covid4{
+        margin-left: 88.4%; 
+        margin-top: 50%; 
+        width: 10%;
+    }
     
 }
 
@@ -99,10 +114,6 @@ i.retry{
         width: 90px; 
         height: 90px; 
         bottom: 70px;
-    }
-    
-    p{
-        padding-top: 6em;
     }
 
     .progress-ctn{
@@ -124,5 +135,43 @@ i.retry{
         margin-left: 88.4%; 
         margin-top: 50%; 
         width: 10%;
+    }
+}
+
+/* Media pc grande----------------------------------------- */
+
+@media (min-width: 1200px) {
+    .covid1{
+        margin-left: 11.94%; 
+        margin-top: 4%; 
+        width: 15%;
+    }
+    .covid2{
+        margin-left: 85%; 
+        margin-top: 3%; 
+        width: 14%;
+    }
+    .covid3{
+        margin-left: -2%; 
+        margin-top: 15%; 
+        width: 12%;
+    }
+    .covid4{
+        margin-left: 92%; 
+        margin-top: 28%; 
+        width: 7%;
+    }
+    .text-ctn{
+        padding-top: 7em;
+    }
+    .btn-retry{
+        bottom: 65px;
+    }
+    p{
+        padding-top: 5em;
+    }
+    .progress-ctn{
+        height: 4em; 
+        width: 50%;
     }
 }
