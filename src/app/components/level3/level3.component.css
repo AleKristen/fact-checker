@@ -35,8 +35,13 @@ margin-top: 1.5rem;
     }
 
 .correct {
-background-color: #7ED634;
+  background-color: #7ED634;
+  animation-name: correct;
+  animation: pulse;
+  animation-duration: 0.5s;
 }
+@keyframes correct {
+    }
 
 .cS {
 color: #3F3F3F;
@@ -48,10 +53,10 @@ margin-top: 2rem;
 }
 
 .btn-next{
-  width: 80px; 
-  height: 80px; 
-  bottom: 45px; 
-  position: absolute; 
+  width: 80px;
+  height: 80px;
+  bottom: 45px;
+  position: absolute;
   background-color: #F1F1F1;
   box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.25);
 }
@@ -83,7 +88,7 @@ h6.explanation{
 }
 
 .btn-close{
-  background-color: #562281;
+  background-color:#7ED634;
   font-size: 20px;
   color: #F1F1F1;
   padding: 12px;

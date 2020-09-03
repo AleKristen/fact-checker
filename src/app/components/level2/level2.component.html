@@ -9,19 +9,41 @@
   </div>
 
   <div class="container text-center text-ctn">
-      <div class="container-fluid d-flex justify-content-center ocho">
+      <div class="container-fluid d-flex justify-content-center ctn-options">
           <div class="cS"> <h6>{{question.question}}</h6></div>
-          <div>
+          <div class="ctn-options">
               <button class="btn optionS" *ngFor="let option of question.options;"
               [ngClass]="{'correct': option === correctOption,
               'wrong': option === wrongOption}" (click)="getAnswer(option)" style="width: 16rem;" type="submit">{{option}}</button>
-
 
           </div>
       </div>
   </div>
 
   <div class="container d-flex flex-row justify-content-center align-items-center">
-      <button (click)="nextQuestion()" class="btn rounded-circle btn-next"><i class="next fas fa-chevron-right"></i></button>
+    <button type="button"  class="btn rounded-circle btn-next" data-toggle="modal" data-target="#modal"><i class="next fas fa-chevron-right"></i></button>
   </div>
 </div>
+
+<!-------------------------- Modal ------------------------>
+
+<div class="modal fade" id="modal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title text-left title" id="exampleModalLabel">La respuesta correcta es: <br> {{question.answer}}</h4>
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="container text-center">
+        <h6 class="explanation">{{question.explanation}}</h6>
+      </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <button type="button" (click)="nextQuestion()" class="btn btn-close" data-dismiss="modal">¡Entendido!</button>
+      </div>
+    </div>
+  </div>
+</div>
+

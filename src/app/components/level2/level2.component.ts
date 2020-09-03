@@ -25,12 +25,12 @@ export class Level2Component implements OnInit {
       "number": 2,
       "question": "Con el confinamiento se pretende…",
       "options": [
-          "Aplanar la curva",
+          "Aplanar la curva de contagios",
           "Descansar en casa",
           "Pasar más tiempo con la familia"
       ],
-      "answer": "Aplanar la curva",
-      "explanation": "Falta esto"
+      "answer": "Aplanar la curva contagios",
+      "explanation": "Para reducir el contacto con el exterior, minimizando el riesgo de contagios."
     },
     {
       "number": 3,
@@ -67,14 +67,14 @@ export class Level2Component implements OnInit {
     },
     {
       "number": 6,
-      "question": "¿Cómo se llama al síntoma de dificultad para respirar?",
+      "question": "¿Cómo se conoce el síndrome de dificultad respiratoria aguda?",
       "options":[
-         "Disnea",
+        "ARDS",
         "Cefalea",
         "Hiperventilación"
     ],
-      "answer": "Disnea",
-      "explanation": "Pendiente"
+      "answer": "ARDS",
+      "explanation": "Significa afección pulmonar potencialmente mortal que impide la llegada de suficiente oxígeno a los pulmones y a la sangre."
     }
   ];
 
@@ -92,7 +92,7 @@ export class Level2Component implements OnInit {
     if (this.index <= this.questions.length -1) {
       return this.question = this.questions[(this.index++)];
     } else {
-      this.router.navigateByUrl('/correct');
+      this.router.navigateByUrl('/correct2');
     }
   }
   getAnswer(option:any) {

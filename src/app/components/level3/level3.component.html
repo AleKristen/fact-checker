@@ -11,7 +11,7 @@
     <div class="container text-center text-ctn">
         <div class="container-fluid d-flex justify-content-center ctn-options">
             <div class="cS"> <h6>{{question.title}}</h6></div>
-              <div class="col">
+              <div class="ctn-options">
                 <button class="btn optionS" *ngFor="let option of question.options;"
                   [ngClass]="{'correct': option === correctOption,
                   'wrong': option === wrongOption}" (click)="getAnswer(option)" style="width: 16rem;" type="submit">{{option}}</button>

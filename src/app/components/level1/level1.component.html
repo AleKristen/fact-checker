@@ -11,7 +11,7 @@
   <div class="container text-center text-ctn">
       <div class="container-fluid d-flex justify-content-center ctn-options">
           <div class="cS"> <h6>{{question.question}}</h6></div>
-          <div>
+          <div class="ctn-options">
             <button class="btn optionS" *ngFor="let option of question.options;"
             [ngClass]="{'correct': option === correctOption,
             'wrong': option === wrongOption}" (click)="getAnswer(option)" style="width: 16rem;" type="submit">{{option}}
@@ -31,7 +31,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h4 class="modal-title text-left title" id="staticBackdropLabel">La respuesta correcta es: {{question.answer}}</h4>
+        <h4 class="modal-title text-left title" id="staticBackdropLabel">La respuesta correcta es: <br> {{question.answer}}</h4>
 
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>

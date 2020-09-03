@@ -27,7 +27,22 @@ margin-top: 1.5rem;
 
 .wrong{
   background-color: #562281;
+  animation-name: wrong;
+  animation: shakeX;
+  animation-duration: 0.7s;
 }
+@keyframes wrong {
+    }
+
+.correct {
+  background-color: #7ED634;
+  animation-name: correct;
+  animation: pulse;
+  animation-duration: 0.5s;
+}
+@keyframes correct {
+    }
+
 .correct {
 background-color: #7ED634;
 }
@@ -81,7 +96,7 @@ h6.explanation{
 }
 
 .btn-close{
-  background-color: #562281;
+  background-color: #7ED634;
   font-size: 20px;
   color: #F1F1F1;
   padding: 12px;
