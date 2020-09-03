@@ -1,3 +1,11 @@
+.corona {
+  font-size: 2.81rem;
+  color: #F1F1F1
+}
+.wrongcorona {
+  color: #562281;
+
+}
 h2, .text {
   color: #F1F1F1;
 }
@@ -110,4 +118,4 @@ i {
 
   }
 }
-}
+
