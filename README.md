@@ -10,11 +10,11 @@
 
 ## 1. Definición de producto
 
-El producto es una trivia diseñada para informarse de manera didáctica y divertida sobre la pandemia global actual, llamada covid 19
+El producto es una trivia diseñada para informarse de manera didáctica y divertida sobre la pandemia del Coronavirus.
 
-### Pruebala
+### Pruébala
 
-[Trivia](Link de la pag final heheh)
+[Demo Trivia ¿Cuánto sabes sobre el COVID-19?](https://openproject-afd9c.web.app/)
 
 ## 2. Decisiones de diseño
 
@@ -54,7 +54,7 @@ Reglas de tamaño y grosor
 
 ## 3. Historias de usuario
 
-**Historia 1:**  Yo como usuario **quiero** conocer de qué se trata la trivia de manera clara **para** entenderlo bien de manera legible y con información breve.
+* **Historia 1:**  Yo como usuario **quiero** conocer de qué se trata la trivia de manera clara **para** entenderlo bien de manera legible y con información breve.
 
 * **Historia 2:**   Yo como usuario **quiero** poder ingresar mi nombre **para** personalizar mi experiencia.
 
