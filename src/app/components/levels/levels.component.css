@@ -55,6 +55,10 @@ i {
   color: #F1F1F1;
   box-shadow: 4px 5px 6px rgba(0, 0, 0, 0.14);
 }
+.level1:focus{
+  box-shadow: none;
+  background: #02708F;
+  }
 
 .level2 {
   border-radius: 0px 20px 0px 0px;
@@ -75,4 +79,27 @@ i {
   background: #52207B;
   color: #805F9C;
   box-shadow: 4px 5px 6px rgba(0, 0, 0, 0.14);
+}
+
+/* Tablet */
+@media screen and (min-width: 500px) {
+
+  .banner-s {
+    visibility: hidden;
+  }
+
+  .banner-g {
+    visibility: visible;
+  }
+
+
+}
+
+/* Computador */
+@media screen and (min-width: 1000px) {
+
+  .banner-g {
+    visibility: visible;
+  }
+
 }

@@ -81,3 +81,26 @@ i {
   color: #805F9C;
   box-shadow: 4px 5px 6px rgba(0, 0, 0, 0.14);
 }
+
+/* Tablet */
+@media screen and (min-width: 500px) {
+
+  .banner-s {
+    visibility: hidden;
+  }
+
+  .banner-g {
+    visibility: visible;
+  }
+
+
+}
+
+/* Computador */
+@media screen and (min-width: 1000px) {
+
+  .banner-g {
+    visibility: visible;
+  }
+
+}

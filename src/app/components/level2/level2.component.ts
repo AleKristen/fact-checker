@@ -92,7 +92,7 @@ export class Level2Component implements OnInit {
     if (this.index <= this.questions.length -1) {
       return this.question = this.questions[(this.index++)];
     } else {
-      this.router.navigateByUrl('/correct');
+      this.router.navigateByUrl('/wrong');
     }
   }
   getAnswer(option:any) {

@@ -36,6 +36,7 @@ input {
 .info-row {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .square-info {
@@ -50,7 +51,15 @@ input {
 }
 
 .item-bottom {
-  margin-top: 2.70em;
+  margin-top: 2.7em;
+}
+
+.info-left {
+  margin-left: 4%;
+}
+
+.info-right {
+  margin-right: 4%;
 }
 
 .arrow-left {
@@ -73,4 +82,43 @@ input {
 i.next{
   color: #562281;
   font-size: 45px;
+}
+
+/* Tablet */
+@media screen and (min-width: 500px) {
+
+  .banner-s {
+    visibility: hidden;
+  }
+
+  .banner-g {
+    visibility: visible;
+  }
+
+  .info-left {
+    margin-left: 7%;
+  }
+
+  .info-right {
+    margin-right: 7%;
+  }
+
+
+}
+
+/* Computador */
+@media screen and (min-width: 1000px) {
+
+  .banner-g {
+    visibility: visible;
+  }
+
+  .info-left {
+    margin-left: 6%;
+  }
+
+  .info-right {
+    margin-right: 6%;
+  }
+
 }

@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "openproject-afd9c": {
+      "hosting": {
+        "fact-checker": [
+          "openproject-afd9c"
+        ]
+      }
+    }
+  }
+}

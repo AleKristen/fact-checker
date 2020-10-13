@@ -2,16 +2,17 @@
     <div class="text-center ctn-virus">
         <h4>¡Que el virus no te ataque!</h4>
         <div class="d-flex justify-content-center" style="margin-top: 1em;">
-            <img class="animate__animated animate__pulse animate__infinite" src="../../../assets/image/covid.svg" >
-            <img class="animate__animated animate__pulse animate__infinite" src="../../../assets/image/covid.svg" style="padding-left: 20px; padding-right: 20px;">
-            <img class="animate__animated animate__pulse animate__infinite" src="../../../assets/image/covid.svg">
+          <div class="animate__animated animate__pulse animate__infinite corona" style="padding-left: 20px; padding-right: 20px;" *ngFor="let option of question.options;"
+          [ngClass]="{'wrongcorona': option === wrongOption }">
+             <i class="fas fa-virus"></i> </div>
         </div>
-    </div>
+
+        </div>
 
     <div class="container text-center text-ctn">
         <div class="container-fluid d-flex justify-content-center ctn-options">
             <div class="cS"> <h6>{{question.title}}</h6></div>
-              <div class="col">
+              <div class="ctn-options">
                 <button class="btn optionS" *ngFor="let option of question.options;"
                   [ngClass]="{'correct': option === correctOption,
                   'wrong': option === wrongOption}" (click)="getAnswer(option)" style="width: 16rem;" type="submit">{{option}}</button>

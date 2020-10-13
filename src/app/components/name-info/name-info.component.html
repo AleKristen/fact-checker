@@ -1,5 +1,6 @@
 <div class="d-flex justify-content-start">
-  <img class="position-absolute w-75 mt-0" src="../../../assets/image/ala-pequena.svg" alt="">
+  <img class="position-absolute w-75 mt-0 banner-s" src="../../../assets/image/ala-pequena.svg" alt="">
+  <img class="position-absolute w-75 mt-0 banner-g" src="../../../assets/image/ala-pequena-banner.svg" alt="">
 </div>
 <div class="container-fluid bg-color">
   <div class="d-flex justify-content-center">
@@ -8,19 +9,20 @@
         <h2>¿Cómo te llamas?</h2>
         <input type="text" maxlength="20" autocomplete="off" placeholder="Escribe aquí tu nombre" id="name-user" #userName>
       </div>
-      <div class="info-row">
-          <div class="square-info mr-5">
-            <p>Haz click en la casa para ir al inicio</p>
-            <img class="arrow-left" src="../../../assets/image/flecha-grande.svg" alt="">
-          </div>
-          <div class="square-info item-bottom">
-            <p>Haz click en la “i” para ver las fuentes</p>
-            <img class="arrow-right" src="../../../assets/image/flecha-pequena.svg" alt="">
-          </div>
-      </div>
-      <div class="container d-flex flex-row justify-content-center align-items-center">
-        <button routerLink='/levels' class="btn rounded-circle btn-next" (click)="captureName(userName.value)"><i class="next fas fa-chevron-right"></i></button>
-      </div>
+<!-- aqui va -->
     </div>
   </div>
+  <div class="info-row">
+    <div class="square-info info-left">
+      <p>Haz click en la casa para ir al inicio</p>
+      <img class="arrow-left" src="../../../assets/image/flecha-grande.svg" alt="">
+    </div>
+    <div class="square-info info-right item-bottom">
+      <p>Haz click en la “i” para ver las fuentes</p>
+      <img class="arrow-right" src="../../../assets/image/flecha-pequena.svg" alt="">
+    </div>
+</div>
+<div class="container d-flex flex-row justify-content-center align-items-center">
+  <button routerLink='/levels' class="btn rounded-circle btn-next" (click)="captureName(userName.value)"><i class="next fas fa-chevron-right"></i></button>
+</div>
 </div>

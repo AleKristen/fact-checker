@@ -26,9 +26,13 @@ i.next{
   font-size: 45px;
 }
 
-.banner {
+.banner-s {
   min-width: 350px;
   max-height: 300px;
+}
+
+.banner-g {
+  visibility: hidden;
 }
 
 .logo {
@@ -38,4 +42,34 @@ i.next{
 
 .text-btn {
   margin-top: 0.75em;
+}
+
+/* Tablet */
+@media screen and (min-width: 500px) {
+
+  .banner-s {
+    visibility: hidden;
+  }
+
+  .banner-g {
+    visibility: visible;
+  }
+
+  .text-btn {
+    margin-top: 2em;
+  }
+
+}
+
+/* Computador */
+@media screen and (min-width: 1000px) {
+  .text-btn {
+    margin-top: 4em;
+  }
+
+  .banner-g {
+    visibility: visible;
+  }
+
+
 }
